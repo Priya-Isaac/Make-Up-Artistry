@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+    <style>
+        .portfolio-gallery {
+    background: #fff;
+    padding: 28px 0 40px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(78,28,47,0.07);
+    background: #e9e9e9;
+    display: block;
+    transition: transform 0.17s, box-shadow 0.17s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(138,68,138,0.17);
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid img {
+        height: 170px;
+    }
+}
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid img {
+        height: 150px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+
+<section class="portfolio-gallery">
+    <div class="gallery-grid">
+        <img src="bridel2.jpeg" alt="Gallery 1">
+        <img src="bridel3.jpeg" alt="Gallery 2">
+        <img src="face1-removebg-preview.png" alt="Gallery 3">
+        <img src="bridel5.jpg" alt="Gallery 4">
+        <img src="bridel6.jpg" alt="Gallery 5">
+        <img src="party w2.jpg" alt="Gallery 6">
+        <img src="hairst2.jpg" alt="Gallery 7">
+        <img src="hairst.jpg" alt="Gallery 8">
+        <img src="hair brid.jpg" alt="Gallery 9">
+        <img src="party w.jpg" alt="Gallery 10">
+        <img src="party ma1.jpg" alt="Gallery 11">
+        <img src="party saree.jpg" alt="Gallery 12">
+        <img src="chudi.jpg" alt="Gallery 13">
+        <img src="chudi2.jpg" alt="Gallery 14">
+        <img src="bride new.jpg" alt="Gallery 15">
+    </div>
+</section>
+
+    
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

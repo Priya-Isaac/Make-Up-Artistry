@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+     <style>
+    body {
+      background: #f3eaf3;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: #fff;
+      max-width: 750px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+      padding: 48px 0 48px 0;
+    }
+    .back {
+      font-size: 17px;
+      color: #333;
+      margin-left: 28px;
+      position: absolute;
+      top: 36px;
+      left: calc(50% - 360px);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #232323;
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+    .schedule-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      width: 87%;
+      margin: 0 auto;
+      padding-top: 18px;
+    }
+    .col {
+      flex: 1;
+      min-width: 170px;
+      text-align: center;
+    }
+    .col-title {
+      font-weight: 500;
+      font-size: 15px;
+      color: #272727;
+      border-bottom: 1.5px solid #cecbce;
+      padding-bottom: 11px;
+      margin-bottom: 16px;
+      letter-spacing: 0.3px;
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .col-content {
+      margin-bottom: 18px;
+      font-size: 15px;
+      min-height: 46px;
+      color: #232323;
+    }
+    .btn {
+      background: #3b38f4;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 11px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 6px;
+      transition: background 0.22s;
+    }
+    .btn:hover {
+      background: #04036d;
+    }
+    @media (max-width: 750px) {
+      .container { padding: 14px 0;}
+      .schedule-row { flex-direction: column; gap: 20px; width: 98%; }
+      .col { min-width: 100px; }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+
+<div class="container">
+    <a href="#" class="back">&#8592; Back</a>
+    <h2>Schedule Your Service</h2>
+    <div class="subtitle">
+      Check Out Our Availability And Book The Date And Time That Works For You
+    </div>
+    <div class="schedule-row">
+      <div class="col">
+        <div class="col-title">Select A Date And Time</div>
+        <div class="col-content">
+          Availability For Sunday 11 May<br>
+          No Availability
+        </div>
+        <a href="check-dates.html" class="btn">Check Next Availability</a>
+      </div>
+      <div class="col">
+        <div class="col-title">India Standard Time (IST)</div>
+      </div>
+      <div class="col">
+        <div class="col-title">Service Details</div>
+        <div class="col-content" style="text-align:center;">
+          Bridal Makeup Luxury Package<br>
+          Rs 25000 Negotiable
+        </div>
+        <a href="booking.html" class="btn">Request To Book</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

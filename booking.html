@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+    <style>
+        .booking-section {
+  background: #e5d5e3;
+  min-height: 100vh;
+  padding: 42px 0;
+}
+
+.booking-container {
+  max-width: 950px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  gap: 44px;
+  padding: 38px 38px 30px 38px;
+  box-shadow: 0 3px 28px rgba(64,40,87,0.09);
+}
+
+.client-form {
+  flex: 2 1 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.back-link {
+  color: #333;
+  font-size: 1.01em;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+
+.client-form h2 {
+  margin: 0 0 9px 0;
+  font-size: 1.31em;
+  font-weight: bold;
+  color: #161119;
+}
+
+.client-form hr {
+  border: none;
+  border-top: 1.3px solid #bbb;
+  margin: 7px 0 12px 0;
+}
+
+.desc-label {
+  color: #31313c;
+  font-size: 1.02em;
+  margin-bottom: 7px;
+}
+
+.account-prompt {
+  background: #e2e2e2;
+  padding: 10px 14px;
+  margin: 9px 0 14px 0;
+  font-size: 1.11em;
+  border-radius: 4px;
+  color: #232323;
+  font-weight: 600;
+}
+.account-prompt a {
+  color: #2226d6;
+  text-decoration: underline;
+}
+
+.client-form label {
+  color: #2a2138;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-size: 0.97em;
+  font-weight: 500;
+}
+.client-form input, .client-form textarea, .client-form select {
+  font-size: 1em;
+  padding: 8px 7px;
+  border: 1px solid #bebbc8;
+  border-radius: 3px;
+  background: #f7f6fb;
+  margin-bottom: 7px;
+  margin-top: 1px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+.client-form textarea {
+  min-height: 52px;
+}
+.phone-row {
+  display: flex;
+  gap: 8px;
+}
+.phone-row select {
+  max-width: 65px;
+}
+
+.booking-summary {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.booking-summary-inner {
+  background: #fff;
+  border-radius: 7px;
+  border: 1.7px solid #ece1ea;
+  box-shadow: 0 2px 9px rgba(60,36,85,0.075);
+  width: 270px;
+  padding: 18px 22px 22px 22px;
+}
+.booking-summary h3 {
+  color: #222;
+  margin: 0 0 7px 0;
+  font-size: 1.09em;
+  font-weight: bold;
+}
+.booking-summary hr {
+  border: none;
+  border-top: 1.1px solid #bcb7ca;
+  margin: 6px 0 12px 0;
+}
+.summary-info {
+  color: #130e13;
+  font-size: 1em;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.summary-date {
+  color: #151e78;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.summary-extra {
+  color: #404040;
+  font-size: 0.97em;
+  margin-bottom: 9px;
+}
+.summary-note {
+  color: #474747;
+  font-size: 0.98em;
+  margin-bottom: 15px;
+}
+.summary-btn {
+  width: 100%;
+  background: #8c9bf5;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.summary-btn:hover {
+  background: #657aea;
+}
+
+@media (max-width: 1000px) {
+  .booking-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 7vw;
+  }
+  .booking-summary-inner {
+    width: 100%;
+    min-width: unset;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .booking-container {
+    padding: 7vw 2vw 18px 2vw;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+<section class="booking-section">
+  <div class="booking-container">
+    <form class="client-form">
+      <div class="back-link">&lt; Back</div>
+      <h2>Client Details</h2>
+      <hr>
+      <label class="desc-label">Tell Us A Bit About Yourself</label>
+      <div class="account-prompt">
+        <strong>Already Have An Account? <a href="#">Log In</a> For Faster Booking.</strong>
+      </div>
+      <label for="name">Name *</label>
+      <input type="text" id="name" required>
+      <label for="email">Email *</label>
+      <input type="email" id="email" required>
+      <label for="phone">Phone Number</label>
+      <div class="phone-row">
+        <select id="country-code">
+          <option value="+91">+91</option>
+          <option value="+1">+1</option>
+          <option value="+44">+44</option>
+        </select>
+        <input type="tel" id="phone">
+      </div>
+      <label for="street">Street *</label>
+      <input type="text" id="street" required>
+      <label for="apt">Apt. / Floor No.</label>
+      <input type="text" id="apt">
+      <label for="city">City *</label>
+      <input type="text" id="city" required>
+      <label for="state">State</label>
+      <input type="text" id="state">
+      <label for="message">Add Your Message</label>
+      <textarea id="message"></textarea>
+    </form>
+
+    <div class="booking-summary">
+      <div class="booking-summary-inner">
+        <h3>Booking Details</h3>
+        <hr>
+        <div class="summary-info">
+          <b>Bridal Makeup Luxury Package</b><br>
+          Rs 25000 Negotiable
+        </div>
+        <div class="summary-date">
+          <b>12 May 2025 At 2:30 AM</b>
+        </div>
+        <div class="summary-extra">Client's Place<br>Admin<br>8 Hr</div>
+        <hr>
+        <div class="summary-info">
+          <span>Payment Details</span><br>
+          Rs 25000 Negotiable
+        </div>
+        <hr>
+        <div class="summary-note">
+          By Completing Your Booking, You Agree To Receive Related SMS Notifications.
+        </div>
+        <button class="summary-btn">Book Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

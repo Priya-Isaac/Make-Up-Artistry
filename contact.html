@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+     <style>
+    body {
+      background: #f3eaf3;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-container {
+      max-width: 1200px;
+      margin: 35px auto;
+      background: #fff;
+      border-radius: 7px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+      padding-top: 0;
+    }
+    .contact-title {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      padding: 17px 0 10px 0;
+      background: #f3eaf3;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 7px;
+    }
+    .contact-box {
+      display: flex;
+      background: #e262e0;
+      border-radius: 14px;
+      padding: 38px 16px 26px 26px;
+      justify-content: space-between;
+      gap: 10px;
+      color: #191919;
+    }
+    .contact-col {
+      flex: 1;
+      margin-right: 25px;
+      min-width: 180px;
+    }
+    .contact-col:last-child {
+      margin-right: 0;
+    }
+    .contact-heading {
+      font-weight: bold;
+      margin-bottom: 12px;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+    }
+    .contact-detail {
+      margin-bottom: 12px;
+      font-size: 19px;
+      color: #191919;
+      line-height: 1.5;
+    }
+    .contact-detail i {
+      margin-right: 8px;
+      color: #212121;
+      width: 18px;
+      text-align: center;
+    }
+    .social-icons {
+      margin-top: 12px;
+    }
+    .social-icons a {
+      color: #191919;
+      text-decoration: none;
+      font-size: 22px;
+      margin-right: 18px;
+      transition: color 0.2s;
+    }
+    .social-icons a:hover {
+      color: #fff;
+    }
+    .contact-hours {
+      font-size: 15px;
+    }
+    .contact-hours-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 7px;
+      color: #191919;
+    }
+    .contact-hours-row i {
+      margin-right: 7px;
+      color: #212121;
+    }
+    .contact-hours-row:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 850px) {
+      .contact-box {
+        flex-direction: column;
+        padding: 28px 12px 18px 18px;
+      }
+      .contact-col, .contact-col:last-child { margin-right: 0; }
+    }
+    .reach-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      background: none;
+    }
+    .reach-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 0;
+      letter-spacing: .5px;
+    }
+    .reach-row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 34px;
+      background: none;
+    }
+    .reach-form {
+      flex: 1;
+      min-width: 520px;
+      max-width: 720px;
+    }
+    .reach-form-row {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 17px;
+    }
+    .reach-form-group {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    .reach-form label {
+      font-size: 20px;
+      margin-bottom: 2px;
+      color: #222;
+    }
+    .reach-form input, .reach-form textarea {
+      border: none;
+      border-bottom: 2px solid #222;
+      background: transparent;
+      font-size: 18px;
+      padding: 5px 0 7px 0;
+      margin-bottom: 12px;
+      outline: none;
+      font-family: 'Roboto', sans-serif;
+      resize: none;
+      transition: border-color 0.2s;
+    }
+    .reach-form input:focus, .reach-form textarea:focus {
+      border-bottom: 2px solid #050362;
+    }
+    .reach-form input[type="text"], .reach-form input[type="email"] {
+      width: 100%;
+    }
+    .reach-form textarea {
+      min-height: 42px;
+      width: 100%;
+    }
+    .reach-form .send-btn {
+      background: #0f0bea;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 9px 32px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.22s;
+    }
+    .reach-form .send-btn:hover {
+      background: #030168;
+    }
+    .reach-map {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 420px;
+      max-width: 500px;
+    }
+    .reach-map img {
+      max-width: 100%;
+      max-height: 450px;
+      border-radius: 8px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+      object-fit: cover;
+    }
+    @media (max-width: 850px) {
+      .reach-row { flex-direction: column; align-items: stretch; gap: 28px;}
+      .reach-map { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+
+ <div class="contact-container">
+    <div class="contact-title">CONTACT</div>
+    <div class="contact-box">
+      <div class="contact-col">
+        <div class="contact-heading">Address</div>
+        <div class="contact-detail">
+          <i class="fas fa-map-marker-alt"></i>
+          8-2-686/DR/9, Banjara Hills,<br>
+          Hyderabad, Telangana 500034
+        </div>
+      </div>
+      <div class="contact-col">
+        <div class="contact-heading">Contact</div>
+        <div class="contact-detail">
+          <i class="fas fa-phone"></i> Phone: 076740 83778
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-envelope"></i> Email: Bookingmyna@Gmail.Com
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-col">
+        <div class="contact-heading">Business Hours</div>
+        <div class="contact-hours">
+          <div class="contact-hours-row">
+            <i class="fas fa-clock"></i> Mon - Fri &nbsp;&nbsp; 9:00 Am – 5:00 Pm
+          </div>
+          <div class="contact-hours-row">
+            <i class="fas fa-clock"></i> Saturday &nbsp;&nbsp;&nbsp; 8:00 Am – 4:00 Pm
+          </div>
+          <div class="contact-hours-row">
+            <i class="fas fa-clock"></i> Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Closed
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+
+   <div class="reach-container">
+    <div class="reach-title">Reach Us</div>
+    <div class="reach-row">
+      <form class="reach-form">
+        <div class="reach-form-row">
+          <div class="reach-form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" autocomplete="off">
+          </div>
+          <div class="reach-form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" autocomplete="off">
+          </div>
+        </div>
+        <div class="reach-form-group">
+          <label for="mail">Email*</label>
+          <input type="email" id="mail" name="mail" required autocomplete="off">
+        </div>
+        <div class="reach-form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="2"></textarea>
+        </div>
+        <button class="send-btn" type="submit">Send</button>
+      </form>
+      <div class="reach-map">
+        <img src="gps-map.jpg" alt="Map" />
+      </div>
+    </div>
+  </div>
+  
+  
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

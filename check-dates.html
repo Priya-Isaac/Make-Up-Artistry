@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+      <style>
+    body {
+      background: #f3eaf3;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: #fff;
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 18px rgba(0,0,0,0.07);
+      padding: 48px 0 48px 0;
+      position: relative;
+    }
+    .back {
+      font-size: 17px;
+      color: #333;
+      margin-left: 28px;
+      position: absolute;
+      top: 36px;
+      left: calc(50% - 410px);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 0;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #232323;
+      margin-bottom: 25px;
+      font-size: 15px;
+    }
+    .schedule-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 22px;
+      width: 91%;
+      margin: 0 auto;
+      padding-top: 18px;
+    }
+    .col {
+      flex: 1.2;
+      min-width: 160px;
+      text-align: center;
+    }
+    .col-title {
+      font-weight: 500;
+      font-size: 15px;
+      color: #272727;
+      border-bottom: 1.5px solid #cecbce;
+      padding-bottom: 11px;
+      margin-bottom: 16px;
+      letter-spacing: 0.3px;
+      width: 93%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .picker-row input[type="date"] {
+      font-size: 16px;
+      padding: 8px;
+      border: 1px solid #cecbce;
+      border-radius: 8px;
+      width: 180px;
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+    }
+    .times-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      width: 200px;
+      margin: 0 auto 8px auto;
+    }
+    .times-grid button {
+      background: #fafaff;
+      color: #222;
+      border: 1.3px solid #b0b0bc;
+      border-radius: 8px;
+      padding: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.19s, color 0.19s;
+    }
+    .times-grid button.selected {
+      background: #040297;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+    }
+    .col-details {
+      flex: 1.4;
+      min-width: 170px;
+      text-align: left;
+      padding-left: 28px;
+    }
+    .details-title {
+      font-weight: 500;
+      font-size: 15px;
+      color: #272727;
+      border-bottom: 1.5px solid #cecbce;
+      padding-bottom: 11px;
+      margin-bottom: 16px;
+      letter-spacing: 0.3px;
+      width: 93%;
+    }
+    .details-content {
+      margin-bottom: 12px;
+      font-size: 15px;
+      color: #232323;
+      line-height: 1.54;
+    }
+    .details-content strong {
+      font-weight: 700;
+    }
+    .btn {
+      background: #0a07cb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 11px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.22s;
+      display: block;
+      margin-left: auto;
+    }
+    .btn:hover {
+      background: #020144;
+    }
+    @media (max-width: 950px) {
+      .container { padding: 14px 0;}
+      .schedule-row { flex-direction: column; gap: 20px; width: 98%; }
+      .col { min-width: 100px; }
+      .col-details { padding-left: 0;}
+    }
+  </style>
+  <script>
+    function selectTime(btn) {
+      document.querySelectorAll('.times-grid button').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      const time = btn.innerText;
+      document.getElementById('selected-time').innerText = time;
+      document.getElementById('service-datetime').innerHTML =
+        "<strong>12 May 2025 At " + time + "</strong>";
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+
+  <div class="container">
+    <a href="#" class="back">&#8592; Back</a>
+    <h2>Schedule Your Service</h2>
+    <div class="subtitle">
+      Check Out Our Availability And Book The Date And Time That Works For You
+    </div>
+    <div class="schedule-row">
+      <div class="col">
+        <div class="col-title">Select A Date And Time</div>
+        <input type="date" value="2025-05-12" />
+      </div>
+      <div class="col">
+        <div class="col-title">India Standard Time (IST)</div>
+        <div style="margin-bottom:8px; font-size:15px;">
+          Availability For Monday 12 May
+        </div>
+        <div class="times-grid">
+          <button onclick="selectTime(this)">2:30 am</button>
+          <button onclick="selectTime(this)">2:00 am</button>
+          <button onclick="selectTime(this)">3:30 am</button>
+          <button onclick="selectTime(this)">3:00 am</button>
+          <button onclick="selectTime(this)">4:30 am</button>
+          <button onclick="selectTime(this)">4:00 am</button>
+          <button onclick="selectTime(this)">5:30 am</button>
+          <button onclick="selectTime(this)">5:00 am</button>
+          <button onclick="selectTime(this)">6:30 am</button>
+          <button onclick="selectTime(this)">6:00 am</button>
+        </div>
+      </div>
+      <div class="col-details">
+        <div class="details-title">Service Details</div>
+        <div class="details-content">
+          Bridal Makeup Luxury Package<br>
+          Rs 25000 Negotiable<br>
+          <span id="service-datetime"><strong>12 May 2025 At 2:30 am</strong></span><br>
+          Client's Place<br>
+          Admin<br>
+          8 Hr
+        </div>
+        <a href="booking.html" class="btn">Request To Book</a>
+      </div>
+    </div>
+  </div>
+
+    
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

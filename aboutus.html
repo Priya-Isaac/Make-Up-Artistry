@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Salon - Bridal Makeup</title>
+    <link rel="stylesheet" href="makeup.css">
+    <style>
+
+.aboutus-section {
+    background: #fff;
+    padding: 36px 0 30px 0;
+}
+
+.aboutus-title {
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 14px;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+.aboutus-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    background: #fff;
+    border: 9px solid #504250;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 24px 22px;
+    gap: 14px;
+}
+
+.aboutus-content {
+    flex: 1 1 0;
+    padding-right: 14px;
+    color: #292129;
+}
+
+.aboutus-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #232323;
+}
+
+.aboutus-content p {
+    margin: 0 0 12px 0;
+    font-size: 1.2em;
+    line-height: 1.44;
+    color: #211a21;
+}
+
+.aboutus-image {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    .aboutus-container {
+        flex-direction: column;
+        padding: 16px 7px;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .aboutus-image {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .aboutus-image img {
+        width: 420px;;
+        max-width: 520px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+.advisory-partner-section {
+    background: #fff;
+    padding: 32px 0 36px 0;
+    text-align: center;
+}
+
+.advisory-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #232323;
+    margin-bottom: 22px;
+    letter-spacing: 0.2px;
+}
+
+.advisory-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 42px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advisor-photo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+}
+.advisor-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #7d67cf;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 12px rgba(130,107,205,0.13);
+}
+.advisor-name {
+    color: #553dcc;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 4px;
+    font-style: italic;
+}
+.advisor-role {
+    color: #343434;
+    font-size: 0.98em;
+}
+.advisor-description {
+    flex: 1 1 350px;
+    text-align: left;
+    font-size: 1.3em;
+    color: #222;
+    align-self: center;
+}
+.advisor-description .highlight-link {
+    color: #276ad1;
+    text-decoration: underline;
+    transition: color 0.17s;
+}
+.advisor-description .highlight-link:hover {
+    color: #5b4bb7;
+}
+
+@media (max-width: 700px) {
+    .advisory-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    .advisor-description {
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="bueaty_lg2-removebg-preview.png" alt="Beauty Salon Logo">
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><span>&#128269;</span></button>
+            </div>
+            <a href="signup.html" class="signup-btn">👤</a>
+        </nav>
+    </header>
+
+
+<section class="aboutus-section">
+    <h2 class="aboutus-title">ABOUT US</h2>
+    <div class="aboutus-container">
+        <div class="aboutus-content">
+            <h3>Quality Professionals For All Your Makeup And Hairstyling Needs</h3>
+            <p>
+                Get Reliable And Quality Service From Certified Professionals With Satisfaction Guaranteed!
+            </p>
+            <p>
+                At BookingMyna All Our Professionals Are Qualified, Trained And Certified. Our Professionals Are On-Boarded Only On A Thorough Evaluation And Passed By A Quality Score Given By A Senior Advisory Panel Who Happen To Be The Best In The Industry.
+            </p>
+            <p>
+                Not Only That, We Also Have Customer Protection Included, Where Customers Enjoy A Replacement Guarantee On All Replacement Requests Raised At Least 48 Hours Before The Booked Event Day. Guaranteed Return Of Any Advance Payments Done By Client In An Event Of No Show From Any Booked Professional From BookingMyna.
+            </p>
+            <p><b>Happy Customers And Professionals Are Our Motto.</b></p>
+        </div>
+        <div class="aboutus-image">
+            <img src="makeup new.jpg" alt="About Us Makeup">
+        </div>
+    </div>
+</section>
+
+<section class="advisory-partner-section">
+    <h2 class="advisory-title">Our Advisory Partners</h2>
+    <div class="advisory-content">
+        <div class="advisor-photo-col">
+            <img src="girl for.jpg" alt="Sathyasree Sutari" class="advisor-photo">
+            <div class="advisor-name">Sathyasree Sutari</div>
+            <div class="advisor-role">Course Director &amp; Celebrity Makeup Artist</div>
+        </div>
+        <div class="advisor-description">
+            <p>
+                All Our Professionals Have Passed A Quality Score Set By One Of The Top Rated Academies In The Country, First Foundation PRO. <br>
+                Professionals Are Also Mentored On Quality Servicing Guidelines By
+                <a href="#" class="highlight-link">First Foundation PRO</a>.
+            </p>
+        </div>
+    </div>
+</section>    
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="services.html">Mission</a></li>
+                <li><a href="services.html">Integrations</a></li>
+                <li><a href="booking.html">Features</a></li>
+                <li><a href="booking.html">Pricing</a></li>
+                <li><a href="portfolio.html">Industries</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Other Links</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-info">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>
+                    <span class="footer-icon">&#x1F4CD;</span>
+                    B-2-686/DR/9, Banjara Hills, Hyderabad,<br>
+                    Telangana 500034
+                </li>
+                <li>
+                    <span class="footer-icon">&#x260E;</span>
+                    +91-869-011-0011
+                </li>
+                <li>
+                    <span class="footer-icon">&#x2709;</span>
+                    bookingmyna@gmail.com
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>
+            © 2008-2025 Makeover booking service. All Rights Reserved
+        </span>
+        <div class="footer-social">
+            <a href="#"><span class="footer-icon">&#x1F4F7;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F426;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4F1;</span></a>
+            <a href="#"><span class="footer-icon">&#x1F4AC;</span></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
